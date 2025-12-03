@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BSCS LEADING PARTNER S.R.L.</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Arial", sans-serif;
+            color: #ffffff;
+            background-color: #0f0f0f;
+        }
+
+        h1, h2, h3, p, a, label, input, textarea, button {
+            font-size: 1.4rem;
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 900px;
+        }
+
+        .section-title {
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+            color: #ffd86b;
+        }
+
+        .content-light {
+            color: #e5e5e5;
+            max-width: 900px;
+        }
+
+        /* SERVICES GRID */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        .card {
+            background: #1c1c1c;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #2a2a2a;
+        }
+
+        .card h3 {
+            color: #ffd86b;
+        }
+
+        /* ADVANTAGES */
+        .advantage {
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffd86b;
+        }
+
+        /* PROCESS STEPS */
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        .step {
+            background: #1b1b1b;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .step h3 {
+            color: #ffd86b;
+        }
+
+        /* CONTACT */
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            min-height: 100vh;
+            align-items: center;
+        }
+
+        .contact-text {
+            flex: 1;
+        }
+
+        .contact-image {
+            flex: 1;
+            background: url('https://plus.unsplash.com/premium_photo-1677529497024-00d7310248bc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0') center/cover no-repeat;
+            min-height: 500px;
+            border-radius: 12px;
+        }
+
+        .contact-form {
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 20px;
+            backdrop-filter: blur(6px);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            border-radius: 8px;
+            border: none;
+            margin-bottom: 20px;
+            background: #2b2b2b;
+            color: #fff;
+        }
+
+        button {
+            padding: 15px 30px;
+            border: none;
+            background: #ffd86b;
+            color: #000;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 40px 10%;
+            text-align: center;
+            background: #0a0a0a;
+            margin-top: 40px;
+            color: #dddddd;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1 style="font-size:3.4rem;">BSCS LEADING PARTNER S.R.L.</h1>
+        <p style="font-size:1.8rem; max-width:900px;">
+            Soluții moderne și strategice pentru managementul afacerilor, coordonarea proiectelor 
+            și optimizarea proceselor administrative. Oferim suport complet pentru dezvoltare, 
+            planificare și creșterea eficienței operaționale.
+        </p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+    <h2 class="section-title">Cine Suntem</h2>
+    <p class="content-light">
+        BSCS LEADING PARTNER S.R.L. este un partener strategic pentru companiile care urmăresc 
+        structurarea, dezvoltarea sau optimizarea activităților lor de management și consultanță. 
+        Ne concentrăm pe înțelegerea contextului intern al fiecărui client și pe furnizarea de 
+        soluții adaptate, ce sprijină procesele de decizie. Oferim o abordare modernă, bazată pe 
+        analiză aprofundată, transparență și planificare clară. Ajutăm organizațiile să gestioneze 
+        proiecte complexe, să îmbunătățească funcțiile administrative și să găsească noi direcții 
+        de dezvoltare. Ne bazăm pe profesionalism, consecvență și rezultate măsurabile.
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section>
+    <h2 class="section-title">Ce Oferim</h2>
+
+    <div class="grid-3">
+        <div class="card">
+            <h3>Management de Afaceri & Administrativ</h3>
+            <p>
+                Optimizăm structura operațională a companiilor prin analiză, reorganizare 
+                și implementare de proceduri eficiente. Sprijinim managerii în luarea deciziilor 
+                strategice și în monitorizarea performanței interne.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Management de Proiect</h3>
+            <p>
+                Coordonăm proiecte de la idee la finalizare, asigurând planificare clară, 
+                resurse bine distribuite și control permanent al progresului. Ne asigurăm că 
+                toate etapele sunt realizate conform obiectivelor stabilite.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Consultanță în Afaceri & Finanțe</h3>
+            <p>
+                Oferim soluții de consultanță financiară și de business adaptate domeniului 
+                fiecărui client. Realizăm analize, previziuni și recomandări pentru creșterea 
+                stabilității și profitabilității companiei.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section>
+    <h2 class="section-title">De ce să Lucrezi cu Noi</h2>
+
+    <div class="grid-3">
+        <div class="advantage">
+            <h3>Abordare Modernă & Adaptată</h3>
+            <p>
+                Folosim metode contemporane de analiză și management, adaptându-ne rapid 
+                la schimbările din industrie și la nevoile specifice ale fiecărui client.
+            </p>
+        </div>
+
+        <div class="advantage">
+            <h3>Transparență în Fiecare Etapă</h3>
+            <p>
+                Comunicăm clar și constant, oferind feedback precis și rapoarte detaliate 
+                despre toate procesele și proiectele gestionate.
+            </p>
+        </div>
+
+        <div class="advantage">
+            <h3>Orientare către Rezultate</h3>
+            <p>
+                Ne concentrăm pe soluții practice, măsurabile și eficiente, care ajută 
+                companiile să își atingă obiectivele într-un mod sustenabil.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS -->
+<section>
+    <h2 class="section-title">Cum Lucrăm</h2>
+
+    <div class="steps">
+        <div class="step">
+            <h3>1. Analiză & Înțelegere</h3>
+            <p>
+                Evaluăm situația actuală, necesitățile și obiectivele clientului pentru a 
+                construi o imagine clară a proiectului.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>2. Planificare & Strategie</h3>
+            <p>
+                Stabilim structura acțiunilor, definim indicatori de performanță și creăm 
+                un plan adaptat specificului companiei.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>3. Implementare & Monitorizare</h3>
+            <p>
+                Punem în aplicare soluțiile propuse și monitorizăm constant progresul pentru 
+                a garanta rezultate stabile și sustenabile.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section">
+    <div class="contact-text">
+        <h2 class="section-title">Hai să Colaborăm</h2>
+        <p class="content-light">
+            Ne puteți contacta oricând prin email — răspundem rapid și cu interes fiecărui proiect.  
+            Suntem gata să oferim soluții personalizate care pot transforma modul în care funcționează 
+            afacerea dumneavoastră și să vă sprijinim în atingerea obiectivelor strategice.
+        </p>
+
+        <p class="content-light" style="margin-top: 20px;">
+            <strong>Email:</strong> contact@bscsleadingpartner.services<br>
+            <strong>Adresă:</strong> Sos. Colentina NR. 16 BL. A5 AP. B44, Sectorul 2 Bucuresti, 021177
+        </p>
+
+        <div class="contact-form">
+            <label>Nume</label>
+            <input type="text" placeholder="Introduceți numele..." />
+
+            <label>Email</label>
+            <input type="email" placeholder="Introduceți email..." />
+
+            <label>Mesaj</label>
+            <textarea rows="4" placeholder="Scrieți mesajul..."></textarea>
+
+            <button>Trimite</button>
+        </div>
+    </div>
+
+    <div class="contact-image"></div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 BSCS LEADING PARTNER S.R.L. • Toate drepturile rezervate.
+</footer>
+
+</body>
+</html>
